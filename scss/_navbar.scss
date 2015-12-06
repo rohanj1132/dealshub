@@ -1,0 +1,14 @@
+.navbar {
+	background-color: white;
+}
+
+.navbar-brand {
+	transition: font-size 1s;
+	font-size: 28px;
+	font-weight: 700;
+	color: #709995;
+	&:hover {
+		color: #3C3E4D;
+		font-size: 32px;
+	}
+}

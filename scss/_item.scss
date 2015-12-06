@@ -1,0 +1,64 @@
+.item {
+	background-color: white;
+	margin: 10px 0;
+	float: left;
+	padding: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	border-radius: 2px;
+
+	@media screen and (min-width: 768px) {
+		width: 32%;
+		margin-right: 15px;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 50%;
+		margin-right: 15px;
+		&:nth-child(2n){
+			margin-right: 0;
+		}
+	}
+	
+	&__header {
+		display: block;
+		padding: 5px 10px;
+
+		font-size: 18px;
+		font-weight: 600;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	
+	&__img {
+		height: 165px;
+		width: 150px;
+	}
+
+	&__pricing {
+		padding-top: 100px;
+	}
+
+	&__original-price {
+		font-size: 12px;
+	}
+
+	&__final-price {
+		font-weight: bold;
+		font-size: 20px;
+		color: orange;
+	}
+
+	&__discount {
+		font-size: 12px;
+		color: green;
+	}
+
+	&__provider {
+		padding: 5px 10px;
+	}
+}

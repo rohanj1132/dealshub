@@ -1,0 +1,63 @@
+body {
+  background: url("../../resources/subtle_white_mini_waves.png");
+  color: #3C3E4D;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.navbar {
+  background-color: white; }
+
+.navbar-brand {
+  transition: font-size 1s;
+  font-size: 28px;
+  font-weight: 700;
+  color: #709995; }
+  .navbar-brand:hover {
+    color: #3C3E4D;
+    font-size: 32px; }
+
+.item {
+  background-color: white;
+  margin: 10px 0;
+  float: left;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px; }
+  @media screen and (min-width: 768px) {
+    .item {
+      width: 32%;
+      margin-right: 15px; }
+      .item:nth-child(3n) {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .item {
+      width: 50%;
+      margin-right: 15px; }
+      .item:nth-child(2n) {
+        margin-right: 0; } }
+  .item__header {
+    display: block;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .item__img {
+    height: 165px;
+    width: 150px; }
+  .item__pricing {
+    padding-top: 100px; }
+  .item__original-price {
+    font-size: 12px; }
+  .item__final-price {
+    font-weight: bold;
+    font-size: 20px;
+    color: orange; }
+  .item__discount {
+    font-size: 12px;
+    color: green; }
+  .item__provider {
+    padding: 5px 10px; }
+
+/*# sourceMappingURL=style.css.map */

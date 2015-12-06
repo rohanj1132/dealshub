@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Deals Hub</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href="dist/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Deals Hub</a>
+            <ul class="list-inline navbar-text navbar-right">
+                <li data-bind="visible:apiHits">API Hits:<span data-bind="text:apiHits"></span></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+		<div data-bind="foreach: deals" class="row">
+			<div class="item">
+				<a class="item__header" target="_blank" data-bind="text: name, attr:{href:link}"></a>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="saving-label"></div>
+						<img class="item__img" data-bind="attr:{src:image}"/>	
+					</div>
+					<div class="col-xs-6 item__pricing">
+						<div class="item__final-price">
+							<span>Rs.</span>
+							<span data-bind="text: finalPrice"></span>
+						</div>
+						<div class="item__original-price">
+							<del>Rs.</del>
+							<del data-bind="text: actual_price"></del>
+							(<span data-bind="text: discount"></span>)
+						</div>
+						<div data-bind="text: rating"></div>
+					</div>
+				</div>
+				<div class="item__provider"><span>Provider:</span><span data-bind="text: provider"></span></div>
+				
+			</div>
+		</div>
+	</div>
+	<script src="js/lib/require.js"></script>
+	<script src="dist/js/app.js"></script>
+</body>
+</html>
