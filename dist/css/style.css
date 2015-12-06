@@ -19,25 +19,40 @@ body {
   background-color: white;
   margin: 10px 0;
   float: left;
-  padding: 5px;
+  padding: 5px 15px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 2px; }
-  @media screen and (min-width: 768px) {
-    .item {
-      width: 32%;
-      margin-right: 15px; }
-      .item:nth-child(3n) {
-        margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .item {
-      width: 50%;
+      width: 100%; } }
+  @media screen and (min-width: 480px) {
+    .item {
+      width: 48%;
       margin-right: 15px; }
       .item:nth-child(2n) {
         margin-right: 0; } }
+  @media screen and (min-width: 768px) {
+    .item {
+      width: 31.5%;
+      margin-right: 15px; }
+      .item:nth-child(2n) {
+        margin-right: 15px; }
+      .item:nth-child(3n) {
+        margin-right: 0; } }
+  @media screen and (min-width: 992px) {
+    .item {
+      width: 23%;
+      margin-right: 15px; }
+      .item:nth-child(2n) {
+        margin-right: 15px; }
+      .item:nth-child(3n) {
+        margin-right: 15px; }
+      .item:nth-child(4n) {
+        margin-right: 0; } }
   .item__header {
     display: block;
-    padding: 5px 10px;
+    padding: 5px 0;
     font-size: 18px;
     font-weight: 600;
     overflow: hidden;
@@ -47,7 +62,7 @@ body {
     height: 165px;
     width: 150px; }
   .item__pricing {
-    padding-top: 100px; }
+    padding: 5px 0; }
   .item__original-price {
     font-size: 12px; }
   .item__final-price {
@@ -58,6 +73,6 @@ body {
     font-size: 12px;
     color: green; }
   .item__provider {
-    padding: 5px 10px; }
+    padding: 5px 0; }
 
 /*# sourceMappingURL=style.css.map */
